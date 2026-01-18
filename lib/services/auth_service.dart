@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class AuthService {
-  static const String baseUrl = "http://10.0.2.2:8000/api"; // local
+  static const String baseUrl = "http://127.0.0.1:8000/api"; // local
 
   /// Intenta logear con username y password
   /// Retorna un Map con los datos del usuario si login correcto
@@ -68,12 +68,11 @@ class AuthService {
         }),
       );
 
-      print(response.statusCode);
       if (response.statusCode == 200) {
         final data = jsonDecode(response.body);
         return data;
       } else {
-        print("Algo ha ido mal al crear el usuario");
+        print(response.body);
         return null;
       }
     } catch (e) {

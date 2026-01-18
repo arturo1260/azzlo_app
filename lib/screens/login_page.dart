@@ -44,6 +44,7 @@ class _Login extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColors.background,
       appBar: AppBar(),
       body: Center(
         child: Form(
