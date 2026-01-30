@@ -1,6 +1,6 @@
 import 'package:azzlo_app/core/styles/app_colors.dart';
-import 'package:azzlo_app/screens/login_page.dart';
-import 'package:azzlo_app/screens/sign_up_page.dart';
+import 'package:azzlo_app/screens/login/login_page.dart';
+import 'package:azzlo_app/screens/login/sign_up_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 

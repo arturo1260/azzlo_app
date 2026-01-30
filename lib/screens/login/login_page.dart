@@ -1,7 +1,8 @@
+import 'package:azzlo_app/screens/login/forget_password_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import '../core/styles/app_colors.dart';
-import '../services/auth_service.dart';
+import '../../core/styles/app_colors.dart';
+import '../../services/auth_service.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -159,6 +160,17 @@ class _Login extends State<LoginPage> {
                   ),
                 ),
 
+
+                TextButton(onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const ForgetPasswordPage(),
+                    ),
+                  );
+                }, child: Text("He olvidado la contraseña")),
+
+
                 const SizedBox(height: 20),
 
                 ElevatedButton(
@@ -167,7 +179,7 @@ class _Login extends State<LoginPage> {
                       backgroundColor: AppColors.primary
                     ),
                     child: Text(
-                      "Enviar",
+                      "Iniciar sesión",
                       style: TextStyle(
                         color: AppColors.textPrimary,
                       ),

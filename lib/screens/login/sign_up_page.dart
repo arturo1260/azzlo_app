@@ -4,7 +4,7 @@ import 'package:azzlo_app/services/auth_service.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-import '../core/styles/app_colors.dart';
+import '../../core/styles/app_colors.dart';
 
 class SignUpPage extends StatefulWidget {
   const SignUpPage({super.key});
